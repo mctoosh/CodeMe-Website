@@ -3,6 +3,7 @@
 <head>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <meta charset="UTF-8">
+<link href="css/font-awesome.min.css" rel="stylesheet"/>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>CodeMe.com</title>
 </head>
@@ -10,31 +11,49 @@
   <div class="wrapper">
 <div class="banner-wrapper">
 
-
-
-<h1>CodeMe.com</h1>
 <header>
-<nav class="menu">
-  <label for="toggle">&#9776;</label>
-  <input type="checkbox" id="toggle"/>
-  <div class="links">
-    <a href="#">Learn</a>
-    <a href="#">Teach</a>
-    <a href="#">Projects</a>
-    <a href="#">Stats</a>
-    <a href="#">Help Us</a>
-    <a href="#">About</a>
-    <a href="#"><span>Free trial</span></a>
-  </div>
+  <div id="header-inner">
+    <a href="index.html" id="logo"></a>
+ <nav>
+   <a href="#" id="menu-icon"></a>
+   <ul>
+     <li><a href="index.html" class="current">Home</a></li>
+     <li><a href="#">Learn</a></li>
+     <li><a href="#">Teach</a></li>
+     <li><a href="#">Projects</a></li>
+     <li><a href="#">Stats</a></li>
+     <li><a href="#">About</a></li>
+     <li><a href="#">Help Us</a></li>
+     <li><a href="#">Free trial</a></li>
+   </ul>
 </nav>
-</header>
-
-
-
-
-<!--<img class="code" src="images/CodingIcon.png" alt="Mountain View">-->
 </div>
+</header>
+<!--Slider starts here-->
+<div class="slide-wrap">
+  <section class="slider">
+    <img name="slide" alt="Image slider">
+  </section>
+</div>
+<!--Slider Ends here-->
+
+
+
+</div>
+<section class="one-third">
+  <div class="icon-wrap">
+<td><i class="fa fa-desktop"></i></td>
+  </div>
+  <h3>Web Design</h3>
+</section>
+<section class="one-third">
+<div class="icon-wrap">
+<td><i class="fa fa-pencil-square-o"></i></td>
+</div>
+</section>
+
 </div><!--End Of Wrapper-->
+<script src="js/main.js"></script>
 </body>
 
 </html>
