@@ -1,22 +1,14 @@
-let i = 0; //start pointer
-let images = [];
-let time = 2000;
-
-//image List
-images[0] = 'images/desktop-1.png';
-images[1] = 'images/desktop-2.png';
-images[2] = 'images/desktop-3.png';
-
-//change image
-function changeImg(){
-  document.slide.src = images[i];
-
-  if(i < images.length - 1){
-    i++;
-  } else {
-    i = 0;
-  }
-  setTimeout("changeImg()", time);
+let myIndex = 0;
+carousel();
+"use strict";
+function carousel() {
+    let i;
+    let x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
 }
-
-window.onload = changeImg;
