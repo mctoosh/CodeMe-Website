@@ -1,3 +1,4 @@
+//This code is for the Image slider
 let myIndex = 0;
 carousel();
 "use strict";
@@ -12,3 +13,5 @@ function carousel() {
     x[myIndex-1].style.display = "block";
     setTimeout(carousel, 2000); // Change image every 2 seconds
 }
+
+//This code is for the typewriter
