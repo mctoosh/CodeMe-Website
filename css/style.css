@@ -1,11 +1,25 @@
 
 @import 'https://fonts.googleapis.com/css?family=Alegreya+Sans';
-@media screen and (max-width:750px){
+/*Media query for smartphones*/
+@media screen and (max-width: 768px) {
 
-  img{
-    margin-top:200px;
-    width:50%;
+  p{
+    font-size:130%;
   }
+  h3{
+    font-size:150%;
+  }
+  header{
+    height:80px;
+    position:relative;
+  }
+#logo{
+  display: none;
+}
+
+#menu-icon{
+  display: inline;
+}
 
 }
 
@@ -67,14 +81,22 @@ a{
 a:hover{
   color: #C3D7DF;
 }
-
+/*--- Start of Navigation bar--*/
 nav{
   float:right;
   padding:25px 20px 0px 0px;
 }
+#menu-icon{
+  display: hidden;
+  width: 40px;
+  height:40px;
+  background: url(images/nav-dark.png) center;
+}
 ul{
   list-style:none;
 }
+
+
 
 img{
   display: block;
