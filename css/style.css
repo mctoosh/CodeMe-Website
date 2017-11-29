@@ -1,4 +1,14 @@
 
+@import 'https://fonts.googleapis.com/css?family=Alegreya+Sans';
+@media screen and (max-width:750px){
+
+  img{
+    margin-top:200px;
+    width:50%;
+  }
+
+}
+
 *{
   margin:0;
   border:0;
@@ -8,6 +18,11 @@ body{
   background:#f1f6f8;
   font-family:sans-serif;
   margin:0 auto;
+}
+
+#wrapper{
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 #banner-wrapper{
@@ -24,9 +39,33 @@ header{
 #logo {
   margin:20px;
   float:left;
-  width:80px;
-  height:30px;
+  width:120px;
+  height:60px;
 
+}
+
+p{
+  font-family: 'Alegreya Sans', sans-serif;
+  color:#524C56;
+  font-size:160%;
+  line-height:155%;
+  padding:3%;
+  text-indent:2%;
+  text-align:justify;
+}
+
+span{
+  color: green;
+}
+
+a{
+  color:#524C56;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover{
+  color: #C3D7DF;
 }
 
 nav{
@@ -38,8 +77,12 @@ ul{
 }
 
 img{
-  margin-top: 80px;
-  width:80%;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  margin-bottom: -4px;
 
 }
 
@@ -50,13 +93,4 @@ img{
 .slide3{
   max-width:500px;
   width:100%;
-}
-
-@media screen and (max-width:750px){
-
-  img{
-    margin-top:200px;
-    width:50%;
-  }
-
 }
