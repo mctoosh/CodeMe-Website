@@ -1,7 +1,7 @@
 
 @import 'https://fonts.googleapis.com/css?family=Alegreya+Sans';
-/*Media query for smartphones*/
-@media screen and (max-width: 768px) {
+/*Start of Media query for smartphones*/
+@media screen and (max-width: 855px) {
 
   p{
     font-size:130%;
@@ -43,6 +43,8 @@ nav li{
 }
 
 }
+
+/*End of Media query for smartphones*/
 
 *{
   margin:0;
@@ -88,10 +90,14 @@ p{
   text-indent:2%;
   text-align:justify;
 }
+h3{
+  font-size:
+}
 
 span{
   color: green;
 }
+/*--- Start of Navigation bar--*/
 
 a{
   color:#524C56;
@@ -102,7 +108,7 @@ a{
 a:hover{
   color: #C3D7DF;
 }
-/*--- Start of Navigation bar--*/
+
 nav{
   float:right;
   padding:25px 20px 0px 0px;
@@ -117,6 +123,35 @@ ul{
   list-style:none;
 }
 
+nav ul li{
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 150%;
+  display: inline-block;
+  float: left;
+  padding: 10px;
+}
+nav ul li a{
+  color:#6991AC;
+}
+.current{
+  color: #3F5767;
+}
+a:hover{
+  color: #A5BDCD;
+}
+
+
+/* start of Slider*/
+
+.slider{
+  max-width:1200px;
+}
+
+.slider1 img{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
 
 img{
@@ -126,14 +161,4 @@ img{
   height: auto;
   width: auto;
   margin-bottom: -4px;
-
-}
-
-.mySlides{
-  display:none;
-}
-
-.slide3{
-  max-width:500px;
-  width:100%;
 }
