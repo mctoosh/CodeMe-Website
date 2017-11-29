@@ -91,7 +91,13 @@ p{
   text-align:justify;
 }
 h3{
-  font-size:
+  font-size:175%;
+  line-height: 155%;
+  font-weight: 500;
+  color: #524C56;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0;
 }
 
 span{
@@ -153,7 +159,7 @@ a:hover{
   margin: 0 auto;
 }
 
-
+/*Start of Images*/
 img{
   display: block;
   margin: 0 auto;
@@ -161,4 +167,12 @@ img{
   height: auto;
   width: auto;
   margin-bottom: -4px;
+}
+
+/*One-Third Start*/
+.one-third{
+  width: 33.333333%;
+  float:left;
+  text-align: justify;
+  text-align: center;
 }
