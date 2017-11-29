@@ -14,11 +14,32 @@
     position:relative;
   }
 #logo{
-  display: none;
+  margin:15px
 }
 
 #menu-icon{
-  display: inline;
+  display: inline-block;
+}
+
+nav:hover ul{
+  display: block;
+}
+nav ul, nav:active ul {
+  display: none;
+  z-index: 1000;
+  position: absolute;
+  padding: 20px;
+  background: #F5F5F5;
+  border: 1px solid #A5BDCD;
+  right: 20px;
+  width: 50%;
+  border-radius: 3px 0 3px 3px;
+  opacity: .95;
+}
+
+nav li{
+  text-align: center;
+  width: 100%;
 }
 
 }
@@ -90,7 +111,7 @@ nav{
   display: hidden;
   width: 40px;
   height:40px;
-  background: url(images/nav-dark.png) center;
+  background: url("../images/nav-dark.png") center;
 }
 ul{
   list-style:none;
