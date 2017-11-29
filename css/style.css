@@ -1,7 +1,7 @@
 
 @import 'https://fonts.googleapis.com/css?family=Alegreya+Sans';
 /*Start of Media query for smartphones*/
-@media screen and (max-width: 855px) {
+@media screen and (max-width: 768px) {
 
   p{
     font-size:130%;
@@ -40,6 +40,21 @@ nav ul, nav:active ul {
 nav li{
   text-align: center;
   width: 100%;
+}
+
+.one-third{
+  float:left;
+  width: 100%;
+}
+
+.icon-wrap{
+  height: 80px;
+  width: 80px;
+  margin-top: 3%;
+}
+.icon-wrap i{
+  font-size: 250%;
+  padding-top: 27%;
 }
 
 }
@@ -175,4 +190,36 @@ img{
   float:left;
   text-align: justify;
   text-align: center;
+}
+
+.icon-wrap{
+  margin:0 auto;
+  width: 120px;
+  height:120px;
+  border-radius: 125%;
+  text-align: center;
+  background-color: #00cc00;
+  margin-top: 8%;
+  margin-bottom: 3%;
+}
+
+.icon-wrap i{
+  text-align: center;
+  color: #F0F0F0;
+  font-size: 450%;
+  padding: 20%;
+}
+.left-col{
+  float: left;
+  margin: 0 auto;
+  width: 60%;
+  height: auto;
+  padding: 1%;
+}
+.sidebar{
+  float: right;
+  margin: 0 auto;
+  width: 32%;
+  height: auto;
+  padding: 1%;
 }
