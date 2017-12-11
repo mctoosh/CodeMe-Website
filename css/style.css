@@ -1,7 +1,7 @@
 
 @import 'https://fonts.googleapis.com/css?family=Alegreya+Sans';
 /*Start of Media query for smartphones*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 660px) {
 
   p{
     font-size:130%;
@@ -14,7 +14,7 @@
     position:relative;
   }
 #logo{
-  margin:15px
+  margin:15px;
 }
 
 #menu-icon{
@@ -115,9 +115,6 @@ h3{
   padding: 0;
 }
 
-span{
-  color: green;
-}
 /*--- Start of Navigation bar--*/
 
 a{
@@ -138,7 +135,7 @@ nav{
   display: hidden;
   width: 40px;
   height:40px;
-  background: url("../images/nav-dark.png") center;
+  background: url(../images/nav-dark.png) center;
 }
 ul{
   list-style:none;
@@ -148,17 +145,17 @@ nav ul li{
   font-family: 'Alegreya Sans', sans-serif;
   font-size: 150%;
   display: inline-block;
-  float: left;
+  float:left;
   padding: 10px;
 }
 nav ul li a{
   color:#6991AC;
 }
 .current{
-  color: #3F5767;
+  color: #69C569;
 }
 a:hover{
-  color: #A5BDCD;
+  color: #69C569;
 }
 
 
@@ -222,4 +219,79 @@ img{
   width: 32%;
   height: auto;
   padding: 1%;
+}
+
+.one-third-padding {
+ width: 29%;
+ float: left;
+ margin: 2% 2%;
+text-align: justify;
+}
+
+.clearfix-padding{
+  clear: both;
+  padding: 2%;
+}
+
+/*--- Start of footer ---*/
+footer{
+  background:#69C569;
+  width: 100%;
+  overflow: auto;
+}
+.icon-text{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.icon-text-icon{
+  float: left;
+  width: 20%;
+  padding: 4%;
+}
+.icon-text-text{
+  width: 64%;
+  float: left;
+  padding: 4% 4% 2% 0;
+}
+.footer-nav{
+  text-align: right;
+}
+.footer-nav a{
+  font-size: 160%;
+  color: #C3D7DF;
+  font-weight: 300;
+}
+.footer-nav a:hover{
+  color: #F5F5F5;
+}
+.social{
+  list-style-type:none;
+  text-align: center; 
+}
+.social li{
+  display: inline;
+}
+.social i{
+  font-size: 380%;
+  margin: 1%;
+  padding: 5% 5% 5% 4%;
+  color: #C3D7DF;
+}
+.social i:hover{
+  color: #F5F5F5;
+}
+footer.second{
+  border-top: 1px solid #AADCD2;
+  background-color: #544B59;
+  max-height: 50px;
+  text-align: center;
+  margin: 0;
+}
+footer.second p{
+  padding: 5px 0 9px 0;
+  text-align: center;
+  color: #f5f5f5;
+  font-size: 160%;
+  line-height: 155%;
 }
