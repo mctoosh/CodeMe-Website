@@ -269,7 +269,7 @@ text-align: justify;
 footer{
   background:#69C569;
   width: 100%;
-  overflow: auto;
+  overflow: hidden;
 }
 .icon-text{
   width: 100%;
