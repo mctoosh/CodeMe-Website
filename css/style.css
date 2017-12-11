@@ -1,7 +1,7 @@
 
 @import 'https://fonts.googleapis.com/css?family=Alegreya+Sans';
 /*Start of Media query for smartphones*/
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 768px) {
 
   p{
     font-size:130%;
@@ -13,9 +13,6 @@
     height:80px;
     position:relative;
   }
-#logo{
-  margin:15px;
-}
 
 #menu-icon{
   display: inline-block;
@@ -24,7 +21,7 @@
 nav:hover ul{
   display: block;
 }
-nav ul, nav:active ul {
+nav ul {
   display: none;
   z-index: 1000;
   position: absolute;
@@ -42,19 +39,54 @@ nav li{
   width: 100%;
 }
 
-.one-third{
+section.one-third{
   float:left;
   width: 100%;
 }
 
-.icon-wrap{
+section.icon-wrap{
   height: 80px;
   width: 80px;
   margin-top: 3%;
 }
-.icon-wrap i{
+section.icon-wrap i{
   font-size: 250%;
   padding-top: 27%;
+}
+section.left-col{
+  width: 100%;
+  padding: 0;
+}
+section.sidebar{
+width: 100%;
+}
+section.one-third-padding{
+  width: 98%;
+  margin: 0;
+  padding: 1%;
+}
+div.icon-text-icon{
+  width: 100%;
+  padding: 0 0 2% 0;
+}
+.icon-text-text{
+  width: 100%;
+  padding: 2% 0 0 0;
+  font-size: 80%;
+}
+ul.footer-nav{
+text-align: center;
+padding-top:5%; 
+}
+ul.footer-nav li{
+  padding: 1%;
+}
+ul.footer-nav a{
+  font-size: 145%;
+}
+
+ul.social i{
+  font-size: 180%;
 }
 
 }
@@ -145,7 +177,7 @@ nav ul li{
   font-family: 'Alegreya Sans', sans-serif;
   font-size: 150%;
   display: inline-block;
-  float:left;
+  float: left;
   padding: 10px;
 }
 nav ul li a{
