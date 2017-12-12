@@ -1,7 +1,7 @@
 
 @import 'https://fonts.googleapis.com/css?family=Alegreya+Sans';
 /*Start of Media query for smartphones*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 950px) {
 
   p{
     font-size:130%;
@@ -89,6 +89,7 @@ ul.social i{
   font-size: 180%;
 }
 
+
 }
 
 /*End of Media query for smartphones*/
@@ -146,6 +147,42 @@ h3{
   text-transform: uppercase;
   padding: 0;
 }
+
+/*--- Start of Search bar--*/
+div.search-box-wrapper{
+  display: inline-flex;
+  font-size:20px; 
+  margin-left: 20px;
+  margin-top: 32px;
+}
+.search-box-input{
+  font-size: inherit;
+  border:0.2em solid #7e7;
+  border-radius: 0.5em 0 0 0.5em;
+  padding: 0.2em 0.5em;
+  outline: 0;
+}
+.search-box-input:hover, .search-box-input:focus{
+border-color: #4d4;
+}
+
+.search-box-button{
+  font-size: inherit;
+  border:0.2em solid #7e7;
+  border-radius: 0 0.5em 0.5em 0;
+  background-color: #7e7;
+  border-left: 0;
+  padding: 0 0.75em;
+  color: white;
+  font-weight: bold;
+  outline: 0;
+  cursor: pointer;
+}
+
+.search-box-button:hover, .search-box-button:focus{
+  border-color: #4d4;
+  background-color: #4d4;
+  }
 
 /*--- Start of Navigation bar--*/
 
@@ -305,7 +342,7 @@ footer{
   display: inline;
 }
 .social i{
-  font-size: 380%;
+  font-size: 280%;
   margin: 1%;
   padding: 5% 5% 5% 4%;
   color: #C3D7DF;
