@@ -76,7 +76,7 @@ div.icon-text-icon{
 }
 ul.footer-nav{
 text-align: center;
-padding-top:5%; 
+padding-top:5%;
 }
 ul.footer-nav li{
   padding: 1%;
@@ -89,12 +89,12 @@ ul.social i{
   font-size: 180%;
 }
 /*Start of Media query for About Page*/
-.container
+div.container
 {
   width: 90%;
   margin: 20px auto;
 }
-.row .column{
+div.row div.column{
   width: calc(50% - 20px);
  margin-bottom: 20px;
 }
@@ -161,7 +161,7 @@ h3{
 /*--- Start of Search bar--*/
 div.search-box-wrapper{
   display: inline-flex;
-  font-size:20px; 
+  font-size:20px;
   margin-left: 20px;
   margin-top: 32px;
 }
@@ -346,7 +346,7 @@ footer{
 }
 .social{
   list-style-type:none;
-  text-align: center; 
+  text-align: center;
 }
 .social li{
   display: inline;
@@ -392,7 +392,7 @@ footer.second p{
 .row p{
   margin: 20px 0 0;
   color:#524C56;
-  border-left:5px solid #f00; 
+  border-left:5px solid #f00;
 }
 .mgt50px{
   margin-top: 50px;
@@ -419,12 +419,15 @@ footer.second p{
   transition: .5s;
   mix-blend-mode: soft-light;
 }
+.row .column:hover:before{
+  bottom: 0%;
+}
 
   .row .column .imgBox
   {
     position: relative;
   }
-  .row .column .imgBox img 
+  .row .column .imgBox img
   {
     width: 100%;
     transition: 5s;
@@ -442,6 +445,7 @@ footer.second p{
    background: rgba(0,0,0,.9);
    width: 100%;
    transition: .5s;
+   z-index: 2;
   }
   .row .column:hover .details{
     bottom:0;
