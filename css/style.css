@@ -123,8 +123,9 @@ div.row div.column{
 
 *{
   margin:0;
-  border:0;
+
   padding:0;
+  box-sizing: border-box;
 }
 body{
   background:#f1f6f8;
@@ -175,41 +176,7 @@ h3{
   padding: 0;
 }
 
-/*--- Start of Search bar--*/
-div.search-box-wrapper{
-  display: inline-flex;
-  font-size:20px;
-  margin-left: 20px;
-  margin-top: 32px;
-}
-.search-box-input{
-  font-size: inherit;
-  border:0.2em solid #7e7;
-  border-radius: 0.5em 0 0 0.5em;
-  padding: 0.2em 0.5em;
-  outline: 0;
-}
-.search-box-input:hover, .search-box-input:focus{
-border-color: #4d4;
-}
 
-.search-box-button{
-  font-size: inherit;
-  border:0.2em solid #7e7;
-  border-radius: 0 0.5em 0.5em 0;
-  background-color: #7e7;
-  border-left: 0;
-  padding: 0 0.75em;
-  color: white;
-  font-weight: bold;
-  outline: 0;
-  cursor: pointer;
-}
-
-.search-box-button:hover, .search-box-button:focus{
-  border-color: #4d4;
-  background-color: #4d4;
-  }
 
 /*--- Start of Navigation bar--*/
 
@@ -235,6 +202,7 @@ nav{
 }
 ul{
   list-style:none;
+  padding: 0;
 }
 
 nav ul li{
@@ -505,4 +473,32 @@ footer.second p{
   .row .column .details ul li a:hover .fa{
     transform: rotateY(360deg);
     color: #f00;
+  }
+  /*Start of Contact Page*/
+  .contactContainer{
+    max-width:1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+  }
+  .contactWrapper{
+    box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+  }
+  .contactWrapper > *{
+    padding: 1em;
+  }
+  .company-info{
+    background: #AAD1AA;
+  }
+  .company-info h3, .company-info ul{
+    text-align: center;
+    margin: 0 0 1rem 0;
+  }
+  .contact{
+    background: #f9feff;
+  }
+
+  /*Inside Form Styles*/
+  .contact form{
+    display: grid;
   }
