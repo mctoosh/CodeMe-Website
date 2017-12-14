@@ -1,6 +1,6 @@
 
 @import 'https://fonts.googleapis.com/css?family=Alegreya+Sans';
-/*Start of Media query for smartphones*/
+/*Start of Media query for Home page smartphones*/
 @media screen and (max-width: 990px) {
 
   p{
@@ -111,6 +111,14 @@ div.row div.column{
     margin-bottom: 20px;
   }
 }
+/*Start of Media query for Contact Page*/
+
+
+
+
+
+
+
 /*End of Media query for smartphones*/
 
 *{
