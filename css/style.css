@@ -112,14 +112,24 @@ div.row div.column{
   }
 }
 /*Start of Media query for Contact Page*/
-@media screen and (min-width: 990px) {
-.contactContainer{
-  display: none;
+@media(min-width: 990px) {
+.contactWrapper{
+  display: grid;
+  grid-template-columns: 1fr 2fr; 
+}
+
+.contactWrapper > *{
+  padding: 2em;
+}
+div.company-info h3, div.company-info ul {
+  text-align: left;
+}
+  
 }
 
 
 
-}
+
 
 /*End of Media query for smartphones*/
 
