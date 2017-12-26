@@ -98,7 +98,13 @@ div.row div.column{
   width: calc(50% - 20px);
  margin-bottom: 20px;
 }
+div#map{
+  height: 400px;
+  width: 94%;
+  margin: auto;
 
+}
+/*Media query for About Page*/
 }
 @media screen and (max-width: 600px) {
   div.container{
@@ -115,7 +121,7 @@ div.row div.column{
 @media(min-width: 990px) {
 .contactWrapper{
   display: grid;
-  grid-template-columns: 1fr 2fr; 
+  grid-template-columns: 1fr 2fr;
 }
 
 .contactWrapper > *{
@@ -124,7 +130,7 @@ div.row div.column{
 div.company-info h3, div.company-info ul {
   text-align: left;
 }
-  
+
 }
 
 
@@ -542,3 +548,10 @@ footer.second p{
     outline: 0;
     transition: background-color 1s ease-out;
   }
+
+  /*Google Maps*/
+  #map {
+  height: 400px;
+  width: 94%;
+  margin:auto;
+}
