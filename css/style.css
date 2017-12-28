@@ -557,3 +557,37 @@ footer.second p{
 }
 
 /*Wikipedia API*/
+#demo ul {
+  list-style-type: none;
+  display: table;
+  width: 90%;
+  border-spacing: 0 10px;
+}
+
+#demo li {
+  display: table-row;
+}
+
+#demo li strong, li .txt, li .langs {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#demo img {
+  display: table-cell;
+  padding-right: 10px;
+}
+
+#demo li .txt {
+  width: 60%;
+  padding-right: 10px;
+}
+
+#demo li:nth-child(even) {
+  background: #eee;
+}
+
+/*Color Picker*/
+.colorPickerMain{
+margin: 20px;
+}

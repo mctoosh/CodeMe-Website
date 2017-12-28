@@ -1,7 +1,7 @@
 //This code is for the Image slider
+"use strict";
 let myIndex = 0;
 carousel();
-"use strict";
 function carousel() {
     let i;
     let x = document.getElementsByClassName("mySlides");
@@ -10,12 +10,14 @@ function carousel() {
     }
     myIndex++;
     if (myIndex > x.length) {myIndex = 1}
+    if (x[myIndex-1]){
     x[myIndex-1].style.display = "block";
     setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
 }
 
 //This code is for the Google Maps API
-"use strict";
+
 function initMap() {
   let leicester = {lat: 52.659259, lng: -1.068952};
   let codeMe = {lat: 52.659259, lng: -1.068952};
@@ -35,7 +37,7 @@ function initMap() {
 }
 
 //This is the Wikipedia section
-"use strict";
+
 
 (function(){
   // creates a new object called xhr
@@ -102,28 +104,31 @@ https://en.wikipedia.org/w/api.php?action=query&format=json&generator=search&pro
   }
 
   // the API call is triggered once the user submits a query
-  searchForm.addEventListener("submit", function(ev){
-    // complete the request url
-    let wiki = baseURL + queryBox.value;
-    // open a connection to the requested API url
-    xhr.open("GET", wiki, true);
-    // be polite to Wikipedia
-    xhr.setRequestHeader('Api-User-Agent', 'Example/1.0');
-    // send off that request
-    xhr.send();
-    // if the response was ok, handle the response data using the gatherData function
-    xhr.onreadystatechange = function() {
-      // console.log(`Current readyState: ${xhr.readyState}`);
-      if (xhr.readyState === 4 && xhr.status === 200) {
-        // parse the response JSON
-        let response = JSON.parse(xhr.responseText);
-        // deal with the parsed JSON data
-        gatherData(response);
-      }
-    };
-    // clear the search box
-    queryBox.value = "";
-    ev.preventDefault();
-  }, false);
+  if (searchForm){
+    searchForm.addEventListener("submit", function(ev){
+      // complete the request url
+      let wiki = baseURL + queryBox.value;
+      // open a connection to the requested API url
+      xhr.open("GET", wiki, true);
+      // be polite to Wikipedia
+      xhr.setRequestHeader('Api-User-Agent', 'Example/1.0');
+      // send off that request
+      xhr.send();
+      // if the response was ok, handle the response data using the gatherData function
+      xhr.onreadystatechange = function() {
+        // console.log(`Current readyState: ${xhr.readyState}`);
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          // parse the response JSON
+          let response = JSON.parse(xhr.responseText);
+          // deal with the parsed JSON data
+          gatherData(response);
+        }
+      };
+      // clear the search box
+      queryBox.value = "";
+      ev.preventDefault();
+    }, false);
+  }
+
 
 }());

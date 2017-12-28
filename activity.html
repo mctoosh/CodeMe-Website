@@ -38,8 +38,9 @@
 <h3>Activities</h3>
 <p>In this page there are different types of activities that have been done with HTML, CSS, and JavaScript.</p>
 </section>
-
-<section class="activityMain">
+<!--End of top section-->
+<!--Start of Main activity section-->
+<section class="wikiMain">
 <div class="activityWiki">
 <form id="searchForm">
   <label for="wikiQuery">Search Wikipedia for:</label>
@@ -50,9 +51,24 @@
 <ul id="demo"></ul>
 
   </div>
-
 </section>
-<!--End of third padding section-->
+
+<section class="colorPickerMain">
+  <div class="activityColorPicker">
+    <label for="colorWell">Color:</label>
+    <input type="color" value="#ff0000" id="colorWell">
+
+    <p>Watch the paragraph colors change when you adjust the color picker.
+   As you make changes in the color picker, the first paragraph's
+   color changes, as a preview (this uses the input
+   event). When you close the color picker, the change
+   event fires, and we detect that to change every paragraph to
+   the selected color.</p>
+
+  </div>
+</section>
+<!--End of Main activity section-->
+
 <div class="clearfix-padding"></div>
 </div><!--End Of Wrapper-->
 <!-- start Footer -->
