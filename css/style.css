@@ -587,7 +587,17 @@ footer.second p{
   background: #eee;
 }
 
+.wikiMain{
+  border-style: solid;
+   border-color: green;
+   padding: 20px;
+}
+
 /*Color Picker*/
 .colorPickerMain{
-margin: 20px;
+margin-top: 20px;
+border-style: solid;
+ border-color: green;
+ padding: 20px;
+
 }
