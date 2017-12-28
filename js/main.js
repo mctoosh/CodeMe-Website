@@ -2,25 +2,34 @@
 "use strict";
 let myIndex = 0;
 carousel();
+
 function carousel() {
-    let i;
-    let x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    if (x[myIndex-1]){
-    x[myIndex-1].style.display = "block";
+  let i;
+  let x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {
+    myIndex = 1
+  }
+  if (x[myIndex - 1]) {
+    x[myIndex - 1].style.display = "block";
     setTimeout(carousel, 2000); // Change image every 2 seconds
-    }
+  }
 }
 
 //This code is for the Google Maps API
 
 function initMap() {
-  let leicester = {lat: 52.659259, lng: -1.068952};
-  let codeMe = {lat: 52.659259, lng: -1.068952};
+  let leicester = {
+    lat: 52.659259,
+    lng: -1.068952
+  };
+  let codeMe = {
+    lat: 52.659259,
+    lng: -1.068952
+  };
   let address = document.getElementById("map");
 
   //this will show the city location of the company
@@ -39,7 +48,7 @@ function initMap() {
 //This is the Wikipedia section
 
 
-(function(){
+(function () {
   // creates a new object called xhr
   // which will handle the API call
   let xhr = new XMLHttpRequest();
@@ -68,12 +77,12 @@ function initMap() {
                 origin=*& \
                 gsrsearch=";
 
-/*
-API Sandbox url
-https://en.wikipedia.org/wiki/Special:ApiSandbox#action=query&format=json&generator=search&prop=extracts%7Clanglinks%7Cpageimages&gsrlimit=10&gsrnamespace=0&exintro&explaintext&exsentences=1&exlimit=max&llprop=url&lllimit=max&piprop=thumbnail|name&origin=*&gsrsearch=kittens
-Request url
-https://en.wikipedia.org/w/api.php?action=query&format=json&generator=search&prop=extracts%7Clanglinks%7Cpageimages&gsrlimit=10&gsrnamespace=0&exintro&explaintext&exsentences=1&exlimit=max&llprop=url&lllimit=max&piprop=thumbnail|name&origin=*&gsrsearch=kittens
-*/
+  /*
+  API Sandbox url
+  https://en.wikipedia.org/wiki/Special:ApiSandbox#action=query&format=json&generator=search&prop=extracts%7Clanglinks%7Cpageimages&gsrlimit=10&gsrnamespace=0&exintro&explaintext&exsentences=1&exlimit=max&llprop=url&lllimit=max&piprop=thumbnail|name&origin=*&gsrsearch=kittens
+  Request url
+  https://en.wikipedia.org/w/api.php?action=query&format=json&generator=search&prop=extracts%7Clanglinks%7Cpageimages&gsrlimit=10&gsrnamespace=0&exintro&explaintext&exsentences=1&exlimit=max&llprop=url&lllimit=max&piprop=thumbnail|name&origin=*&gsrsearch=kittens
+  */
 
   function gatherData(data) {
     // console.log(data);
@@ -85,7 +94,7 @@ https://en.wikipedia.org/w/api.php?action=query&format=json&generator=search&pro
     let k;
     let key;
     // loop through the result pages by pageid
-    for(key in data.query.pages) {
+    for (key in data.query.pages) {
       let tmp = data.query.pages[key];
       if (tmp.thumbnail) {
         img = `<img src="${tmp.thumbnail.source}" alt="${tmp.title}"> `;
@@ -104,8 +113,8 @@ https://en.wikipedia.org/w/api.php?action=query&format=json&generator=search&pro
   }
 
   // the API call is triggered once the user submits a query
-  if (searchForm){
-    searchForm.addEventListener("submit", function(ev){
+  if (searchForm) {
+    searchForm.addEventListener("submit", function (ev) {
       // complete the request url
       let wiki = baseURL + queryBox.value;
       // open a connection to the requested API url
@@ -115,7 +124,7 @@ https://en.wikipedia.org/w/api.php?action=query&format=json&generator=search&pro
       // send off that request
       xhr.send();
       // if the response was ok, handle the response data using the gatherData function
-      xhr.onreadystatechange = function() {
+      xhr.onreadystatechange = function () {
         // console.log(`Current readyState: ${xhr.readyState}`);
         if (xhr.readyState === 4 && xhr.status === 200) {
           // parse the response JSON
@@ -137,23 +146,27 @@ https://en.wikipedia.org/w/api.php?action=query&format=json&generator=search&pro
 let colorWell;
 let defaultColor = "#0000ff";
 window.addEventListener("load", startup, false);
+
 function startup() {
-  colorWell = document.querySelector("#colorWell");
-if (colorWell) {
-  colorWell.value = defaultColor;
-  colorWell.addEventListener("input", updateFirst, false);
-  colorWell.addEventListener("change", updateAll, false);
-  colorWell.select();
+  colorWell = document.querySelector("#colorWell");
+  if (colorWell) {
+    colorWell.value = defaultColor;
+    colorWell.addEventListener("input", updateFirst, false);
+    colorWell.addEventListener("change", updateAll, false);
+    colorWell.select();
+  }
 }
-}
+
 function updateFirst(event) {
   let p = document.querySelector("p");
 
   if (p) {
     p.style.color = event.target.value;
   }
-}function updateAll(event) {
-  document.querySelectorAll("p").forEach(function(p) {
+}
+
+function updateAll(event) {
+  document.querySelectorAll("p").forEach(function (p) {
     p.style.color = event.target.value;
   });
 }
