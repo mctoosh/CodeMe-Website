@@ -132,3 +132,27 @@ https://en.wikipedia.org/w/api.php?action=query&format=json&generator=search&pro
 
 
 }());
+
+//The color picker javascript code
+let colorWell;
+let defaultColor = "#0000ff";
+
+window.addEventListener("load", startup, false);
+function startup() {
+  colorWell = document.querySelector("#colorWell");
+  colorWell.value = defaultColor;
+  colorWell.addEventListener("input", updateFirst, false);
+  colorWell.addEventListener("change", updateAll, false);
+  colorWell.select();
+}
+function updateFirst(event) {
+  let p = document.querySelector("p");
+
+  if (p) {
+    p.style.color = event.target.value;
+  }
+}function updateAll(event) {
+  document.querySelectorAll("p").forEach(function(p) {
+    p.style.color = event.target.value;
+  });
+}
