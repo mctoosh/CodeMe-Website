@@ -170,3 +170,13 @@ function updateAll(event) {
     p.style.color = event.target.value;
   });
 }
+
+//Current Time
+let myLet = setInterval(function() {
+  myTimer();
+}, 1000);
+
+function myTimer() {
+  let d = new Date();
+  document.getElementById("clock").innerHTML = d.toLocaleTimeString();
+}
