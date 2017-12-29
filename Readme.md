@@ -12,7 +12,7 @@ For my home page I created a 4 navigation links, each linked is styled with CSS.
 ## Wireframes
 ###Mobile
 
-(https://github.com/mctoosh/Website/files/1593756/WrImage1.pdf)
+[WrImage1.pdf](https://github.com/mctoosh/Website/files/1593756/WrImage1.pdf)
 
 [WrImage2.pdf](https://github.com/mctoosh/Website/files/1593763/WrImage2.pdf)
 
@@ -22,7 +22,7 @@ For my home page I created a 4 navigation links, each linked is styled with CSS.
 
 ###Website
 
-(https://github.com/mctoosh/Website/files/1593768/WrImage5.pdf)
+[WrImage5.pdf](https://github.com/mctoosh/Website/files/1593768/WrImage5.pdf)
 
 [WrImage6.pdf](https://github.com/mctoosh/Website/files/1593769/WrImage6.pdf)
 
