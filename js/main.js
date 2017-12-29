@@ -171,12 +171,19 @@ function updateAll(event) {
   });
 }
 
-//Current Time
-let myLet = setInterval(function() {
-  myTimer();
-}, 1000);
+//Your Name On WebPage
+(function(){
 
-function myTimer() {
-  let d = new Date();
-  document.getElementById("clock").innerHTML = d.toLocaleTimeString();
+  let myName = document.getElementById("my-name");
+  let userName = document.getElementById("user-name");
+  let getName = document.getElementById("get-name");
+
+  // changes the 'innerHTML' (text) of the element
+  function PerformGreeting(ev) {
+    document.getElementById('my-name').innerHTML = userName.value;
+    ev.preventDefault();
+  }
+  if (getName){
+  getName.addEventListener("submit", PerformGreeting);
 }
+}());

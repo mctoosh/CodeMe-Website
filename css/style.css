@@ -688,13 +688,20 @@ li .langs {
   width: 400px;
 }
 
-/*GOOGLE TRANSLATE*/
-.activityCurrentTime{
+/*Name*/
+.activityName{
   margin-top: 20px;
   border-style: solid;
   border-color: green;
   padding: 20px;
 }
+
+#get-name{
+background: #eee;
+padding: 0.5em;
+}
+
+
 
 /*CSS ANIMATION*/
 .activityCSS{
