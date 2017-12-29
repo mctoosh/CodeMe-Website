@@ -172,7 +172,7 @@ function updateAll(event) {
 }
 
 //Your Name On WebPage
-(function(){
+(function () {
 
   let myName = document.getElementById("my-name");
   let userName = document.getElementById("user-name");
@@ -183,7 +183,7 @@ function updateAll(event) {
     document.getElementById('my-name').innerHTML = userName.value;
     ev.preventDefault();
   }
-  if (getName){
-  getName.addEventListener("submit", PerformGreeting);
-}
+  if (getName) {
+    getName.addEventListener("submit", PerformGreeting);
+  }
 }());

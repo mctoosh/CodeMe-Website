@@ -661,8 +661,10 @@ li .langs {
   padding: 20px;
 }
 
+
 /*Back To Top*/
-.back-to-top{
+
+.back-to-top {
   background-color: black;
   background-color: rgba(0, 0, 0, .75);
   position: fixed;
@@ -675,59 +677,71 @@ li .langs {
   font-weight: bold;
 }
 
+
 /*SVG DESIGN */
-.activitySVG{
+
+.activitySVG {
   margin-top: 20px;
   border-style: solid;
   border-color: green;
   padding: 20px;
 }
 
-#svg{
+#svg {
   height: 210px;
   width: 400px;
 }
 
+
 /*Name*/
-.activityName{
+
+.activityName {
   margin-top: 20px;
   border-style: solid;
   border-color: green;
   padding: 20px;
 }
 
-#get-name{
-background: #eee;
-padding: 0.5em;
+#get-name {
+  background: #eee;
+  padding: 0.5em;
 }
-
 
 
 /*CSS ANIMATION*/
-.activityCSS{
-margin-top: 20px;
-border-style: solid;
-border-color: green;
-padding: 20px;
+
+.activityCSS {
+  margin-top: 20px;
+  border-style: solid;
+  border-color: green;
+  padding: 20px;
 }
 
-#boxCSS{
+#boxCSS {
   width: 100px;
-   height: 50px;
-   background-color: red;
-   font-weight: bold;
-   position: relative;
-   animation: mymove 5s infinite;
-   animation: mymove 5s infinite;
-   text-align: center;
+  height: 50px;
+  background-color: red;
+  font-weight: bold;
+  position: relative;
+  animation: mymove 5s infinite;
+  animation: mymove 5s infinite;
+  text-align: center;
 }
 
 keyframes mymove {
-    from {left: 0px;}
-    to {left: 150px;}
+  from {
+    left: 0px;
+  }
+  to {
+    left: 150px;
+  }
 }
 
 @keyframes mymove {
-    from {left: 0px;}
-    to {left: 150px;}
+  from {
+    left: 0px;
+  }
+  to {
+    left: 150px;
+  }
 }
