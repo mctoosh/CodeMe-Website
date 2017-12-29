@@ -62,6 +62,8 @@ My website has went through many changes through out the development stages. I h
 
 ![capture6](https://user-images.githubusercontent.com/15992710/34448483-a8863922-ece5-11e7-838f-0225e715978d.PNG)
 
+## Site map
+<img width="314" alt="screen shot 2017-12-29 at 23 31 21" src="https://user-images.githubusercontent.com/15992710/34449479-8618ce30-ecf0-11e7-9105-e905a7bd291b.png">
 
 
 
