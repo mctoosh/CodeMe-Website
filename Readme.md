@@ -49,6 +49,22 @@ For my home page I created a 4 navigation links, each linked is styled with CSS.
 ## Why I created My Website
 The reason why I made the website was because of my interest in web development. I was mainly influenced by the way the website www.code.org looks. I wanted to make the visitors aware of what web development is. I wanted to talk about the different web development languages such as, HTML, CSS, and JavaScript and how they could be used to make a website. I also wanted to show on my website what these web development languages could do.
 
+## Changes
+My website has went through many changes through out the development stages. I have used PowerPoint to design my website at the beginning. These were my screen designs before the development stage for my homepage:
+
+![capture1](https://user-images.githubusercontent.com/15992710/34448479-a7f26dc8-ece5-11e7-844f-64bcee88fe08.PNG)
+
+![capture2](https://user-images.githubusercontent.com/15992710/34448480-a815b760-ece5-11e7-8ef9-826f69ea5795.PNG)
+
+![capture3](https://user-images.githubusercontent.com/15992710/34448481-a83ae594-ece5-11e7-96f1-01423681477e.PNG)
+
+![capture5](https://user-images.githubusercontent.com/15992710/34448482-a861c61e-ece5-11e7-80c6-0aadce6fd8ff.PNG)
+
+![capture6](https://user-images.githubusercontent.com/15992710/34448483-a8863922-ece5-11e7-838f-0225e715978d.PNG)
+
+
+
+
 
 ## Reference
 https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_a_href_anchor
