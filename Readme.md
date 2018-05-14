@@ -66,7 +66,41 @@ My website has went through many changes through out the development stages. I h
 <img width="314" alt="screen shot 2017-12-29 at 23 31 21" src="https://user-images.githubusercontent.com/15992710/34449479-8618ce30-ecf0-11e7-9105-e905a7bd291b.png">
 
 
+## ScreenShots
 
+### Homepage
+
+![image](https://user-images.githubusercontent.com/15992710/40019533-65448820-57b7-11e8-837b-64afac624d29.png)
+
+![image](https://user-images.githubusercontent.com/15992710/40019559-7811abc2-57b7-11e8-9555-059933496f92.png)
+
+![image](https://user-images.githubusercontent.com/15992710/40019583-8bf7a8c6-57b7-11e8-9bc1-0ba21581ddc4.png)
+
+![image](https://user-images.githubusercontent.com/15992710/40019628-ad876350-57b7-11e8-972a-c58ac0ba8b12.png)
+
+![image](https://user-images.githubusercontent.com/15992710/40019651-be38f0e2-57b7-11e8-9518-eec0cdde04a5.png)
+
+### Activity Page
+
+![image](https://user-images.githubusercontent.com/15992710/40019693-e071d7d2-57b7-11e8-85f9-270ff8694ad4.png)
+
+![image](https://user-images.githubusercontent.com/15992710/40019720-f293c632-57b7-11e8-8839-d90016e20ed6.png)
+
+![image](https://user-images.githubusercontent.com/15992710/40019754-07547670-57b8-11e8-99a0-7ff3e60c4ade.png)
+
+### About Page
+
+![image](https://user-images.githubusercontent.com/15992710/40019778-1d2aab22-57b8-11e8-8e1a-19129c813752.png)
+
+![image](https://user-images.githubusercontent.com/15992710/40019792-2a8314bc-57b8-11e8-86e1-eaffcd3dcfe4.png)
+
+![image](https://user-images.githubusercontent.com/15992710/40019802-360a7488-57b8-11e8-84e7-0d8016ce9f2c.png)
+
+![image](https://user-images.githubusercontent.com/15992710/40019821-411cecac-57b8-11e8-9a9d-38a3f15fe076.png)
+
+![image](https://user-images.githubusercontent.com/15992710/40019835-4d0fa45a-57b8-11e8-831a-eca1b69c445e.png)
+
+![image](https://user-images.githubusercontent.com/15992710/40019850-5765cfb0-57b8-11e8-8ba9-8b82600f7a5e.png)
 
 ## Reference
 https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_a_href_anchor
